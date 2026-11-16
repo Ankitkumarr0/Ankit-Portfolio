@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ankit Kumar - Java Full Stack Developer portfolio">
+    <title>Ankit Kumar | Java Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a class="logo" href="#home">Ankit<span>.</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+                <a href="#projects">Projects</a><a href="#contact">Contact</a>
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light mode">☾</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero section container" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow">HELLO, I'M</p>
+                <h1>Ankit Kumar</h1>
+                <h2>Java Full Stack Developer</h2>
+                <p class="intro">I am a Computer Science student interested in software development. I enjoy learning programming and building useful web applications.</p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#projects">Explore my work</a>
+                    <a class="btn secondary" href="#contact">Contact me</a>
+                </div>
+                <p class="location">📍 Greater Noida, Uttar Pradesh</p>
+            </div>
+            <div class="hero-card" aria-label="Portfolio introduction">
+                <div class="avatar">AK</div>
+                <p class="card-kicker">ASPIRING DEVELOPER</p>
+                <h3>Learning. Building. Improving.</h3>
+                <p>Focused on Java, web technologies and database development.</p>
+                <div class="mini-tags"><span>Java</span><span>Web</span><span>MySQL</span></div>
+            </div>
+        </section>
+
+        <section class="section alt-section" id="about">
+            <div class="container">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div>
+                        <p class="section-lead">I am Ankit Kumar, a B.Tech Computer Science and Engineering student at Greater Noida College.</p>
+                        <p>I am interested in software development and strengthening my programming fundamentals. I am currently learning Java, frontend development and database connectivity to create practical applications.</p>
+                    </div>
+                    <div class="details-card">
+                        <div><span>Education</span><strong>B.Tech – CSE</strong></div>
+                        <div><span>College</span><strong>Greater Noida College</strong></div>
+                        <div><span>Year</span><strong>3rd Year</strong></div>
+                        <div><span>Location</span><strong>Greater Noida, India</strong></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="skills">
+            <p class="eyebrow">WHAT I WORK WITH</p>
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-lead">Technologies I have studied and am continuing to practice.</p>
+            <div class="skills-grid">
+                <article class="skill-card"><span>☕</span><h3>Java</h3><p>Core Java and OOP concepts</p></article>
+                <article class="skill-card"><span>🌐</span><h3>HTML & CSS</h3><p>Semantic pages and responsive layouts</p></article>
+                <article class="skill-card"><span>⚡</span><h3>JavaScript</h3><p>DOM and client-side validation</p></article>
+                <article class="skill-card"><span>🗄️</span><h3>MySQL</h3><p>SQL queries and relational databases</p></article>
+                <article class="skill-card"><span>🐍</span><h3>Python</h3><p>Programming fundamentals</p></article>
+                <article class="skill-card"><span>Ｃ</span><h3>C</h3><p>Programming fundamentals</p></article>
+            </div>
+        </section>
+
+        <section class="section alt-section" id="projects">
+            <div class="container">
+                <p class="eyebrow">WHAT I'M BUILDING</p>
+                <h2 class="section-title">Projects</h2>
+                <div class="project-card">
+                    <div class="project-icon">✦</div>
+                    <div>
+                        <p class="project-status">CURRENT PROJECT</p>
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A responsive portfolio built with HTML, CSS and JavaScript, with a Java Servlet/JSP backend, JDBC and MySQL contact form.</p>
+                        <div class="mini-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span><span>MySQL</span></div>
+                    </div>
+                </div>
+                <p class="note">Add your other completed projects here as you build them. Do not list projects you have not completed.</p>
+            </div>
+        </section>
+
+        <section class="section container" id="contact">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-grid">
+                <div>
+                    <p class="section-lead">Have a question or opportunity? Send me a message using the form.</p>
+                    <div class="contact-line"><span>Email</span><a href="mailto:ankit519045@gmail.com">ankit519045@gmail.com</a></div>
+                    <div class="contact-line"><span>GitHub</span><a href="https://github.com/Ankitkumarr0" target="_blank" rel="noopener">github.com/Ankitkumarr0</a></div>
+                    <div class="contact-line"><span>Location</span><strong>Greater Noida, India</strong></div>
+                </div>
+                <form class="contact-form" id="contactForm" action="contact" method="post">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name" minlength="2" maxlength="100" required>
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" name="email" maxlength="150" required>
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message" rows="5" minlength="10" maxlength="5000" required></textarea>
+                    <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+                    <button class="btn primary" type="submit">Send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner"><p>© <span id="year"></span> Ankit Kumar. Built as a personal portfolio project.</p><a href="#home">Back to top ↑</a></div>
+    </footer>
+</body>
+</html>
