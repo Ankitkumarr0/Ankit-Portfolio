@@ -70,10 +70,3 @@ A saved row confirms the JDBC/Servlet connection worked.
 - Communications link failure: start MySQL Server and verify port 3306.
 - `javax.servlet` errors: this project uses Jakarta Servlet for Tomcat 10.1; use `jakarta.servlet` imports.
 
-## Before submission
-1. Replace placeholder content with your own genuine information.
-2. Add your own profile photo if desired (do not use someone else's image without permission).
-3. Add completed projects only.
-4. Test on mobile width and both light/dark themes.
-5. Capture screenshots of Home, About, Skills, Projects, Contact, successful form submission, and the database row.
-6. Write your own short project report and include the actual screenshots.
